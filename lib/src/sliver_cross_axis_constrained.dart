@@ -29,8 +29,7 @@ class SliverCrossAxisConstrained extends SingleChildRenderObjectWidget {
   }
 
   @override
-  void updateRenderObject(
-      BuildContext context, RenderSliverCrossAxisConstrained renderObject) {
+  void updateRenderObject(BuildContext context, RenderSliverCrossAxisConstrained renderObject) {
     renderObject
       ..maxCrossAxisExtent = maxCrossAxisExtent
       ..alignment = alignment;
@@ -39,7 +38,6 @@ class SliverCrossAxisConstrained extends SingleChildRenderObjectWidget {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties.add(
-        DiagnosticsProperty<double>('maxCrossAxisExtent', maxCrossAxisExtent));
+    properties.add(DiagnosticsProperty<double>('maxCrossAxisExtent', maxCrossAxisExtent));
   }
 }
